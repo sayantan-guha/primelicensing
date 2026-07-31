@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>hoichoi × Prime Video | Strategic Partnership | hoichoi</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600;700&family=PT+Mono:wght@400&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--red:#d20820;--velvet:#6d0550;--grad:linear-gradient(-60deg,#d20820 0%,#6d0550 100%);--soot:#191919;--dg:#2a2a2a;--mg:#555;--lg:#888;--off:#f5f5f5;--white:#fff;--border:rgba(0,0,0,.08);--shadow:0 2px 16px rgba(0,0,0,.07);--fp:'Outfit',sans-serif;--fb:'Manrope',sans-serif;--fm:'PT Mono',monospace;--fh:'Hind Siliguri',sans-serif;--r-xs:6px;--r-md:16px;--r-full:9999px;}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:var(--fb);color:var(--soot);-webkit-font-smoothing:antialiased;}
+body{background:var(--white);}
+.cover{min-height:calc(100vh - 56px);margin-top:56px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 32px;background:var(--white);position:relative;overflow:hidden;}
+.cover::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 50%,rgba(210,8,32,.03) 0%,transparent 70%);pointer-events:none;}
+.cover-inner{display:flex;flex-direction:column;align-items:center;gap:0;text-align:center;position:relative;z-index:1;}
+.logo-lockup{display:flex;align-items:center;justify-content:center;gap:28px;margin-bottom:32px;}
+.logo-wrap{display:flex;align-items:center;justify-content:center;}
+.logo-wrap img{height:40px;width:auto;display:block;}
+.logo-x{font-family:var(--fp);font-size:28px;font-weight:300;color:rgba(0,0,0,.18);display:flex;align-items:center;}
+.cover-rule{width:48px;height:2px;background:var(--grad);border-radius:2px;margin-bottom:28px;}
+.cover-label{font-family:var(--fm);font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--red);font-weight:600;margin-bottom:14px;display:flex;align-items:center;gap:8px;}
+.cover-label::before,.cover-label::after{content:'';flex:1;max-width:40px;height:1px;background:rgba(210,8,32,.3);}
+.cover-title{font-family:var(--fp);font-size:clamp(22px,3.5vw,38px);font-weight:700;color:var(--soot);letter-spacing:-.03em;line-height:1.1;margin-bottom:14px;}
+.cover-sub{font-size:15px;color:var(--mg);line-height:1.6;max-width:520px;margin-bottom:40px;}
+.scroll-cue{display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--lg);font-family:var(--fm);font-size:8px;letter-spacing:.18em;text-transform:uppercase;animation:bounce 2s infinite;}
+@keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(5px)}}
+.scroll-cue svg{opacity:.3;}
+.blocks{max-width:1100px;margin:0 auto;padding:48px 32px 0;display:flex;flex-direction:column;gap:14px;}
+.block{background:var(--white);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden;box-shadow:var(--shadow);display:grid;grid-template-columns:1fr 1.8fr;color:inherit;position:relative;min-height:220px;}
+.block::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad);z-index:2;}
+.block-left{padding:26px;display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid var(--border);background:var(--off);}
+.block-num{font-family:var(--fp);font-size:48px;font-weight:800;background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;margin-bottom:16px;opacity:.25;}
+.block-cat{font-family:var(--fm);font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:var(--red);font-weight:600;margin-bottom:8px;}
+.block-title{font-family:var(--fp);font-size:clamp(20px,2.2vw,26px);font-weight:800;color:var(--soot);letter-spacing:-.03em;line-height:1.1;margin-bottom:16px;}
+.block-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px;}
+.block-tag{font-family:var(--fm);font-size:8px;letter-spacing:.1em;text-transform:uppercase;padding:4px 10px;border-radius:var(--r-full);background:rgba(210,8,32,.06);border:1px solid rgba(210,8,32,.15);color:var(--red);}
+.block-cta{display:inline-flex;align-items:center;gap:9px;background:var(--grad);color:#fff;font-family:var(--fp);font-size:12px;font-weight:700;padding:10px 20px;border-radius:var(--r-full);text-decoration:none;box-shadow:0 4px 16px rgba(210,8,32,.22);transition:opacity .18s,transform .18s;align-self:flex-start;}
+.block-cta:hover{opacity:.9;transform:translateY(-1px);}
+.block-cta svg{flex-shrink:0;transition:transform .18s;}
+.block-cta:hover svg{transform:translateX(2px);}
+.block-right{padding:26px 28px;display:flex;flex-direction:column;justify-content:center;gap:16px;}
+.block-headline{font-family:var(--fp);font-size:clamp(14px,1.8vw,18px);font-weight:600;color:var(--soot);line-height:1.4;max-width:480px;}
+.block-points{display:flex;flex-direction:column;gap:11px;}
+.block-point{display:flex;gap:12px;align-items:flex-start;}
+.bp-dot{width:6px;height:6px;border-radius:50%;background:var(--red);flex-shrink:0;margin-top:6px;}
+.bp-text{font-size:13px;color:var(--dg);line-height:1.65;}
+.bp-text strong{color:var(--soot);font-weight:600;}
+.block-formats{display:flex;gap:10px;flex-wrap:wrap;padding-top:4px;}
+.fmt-card{background:var(--off);border:1px solid var(--border);border-radius:var(--r-md);padding:12px 16px;flex:1;min-width:120px;}
+.fmt-val{font-family:var(--fp);font-size:20px;font-weight:800;color:var(--soot);letter-spacing:-.02em;margin-bottom:3px;}
+.fmt-lbl{font-family:var(--fm);font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:var(--lg);}
+.fmt-sub{font-size:10.5px;color:var(--mg);margin-top:3px;line-height:1.4;}
+.footer{max-width:1100px;margin:40px auto 0;padding:24px 32px 40px;border-top:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+.footer-logos{display:flex;align-items:center;gap:20px;}
+.footer-logo{height:18px;width:auto;display:block;}
+.footer-logo.prime-logo{height:22px;}
+.footer-x{font-family:var(--fp);font-size:14px;font-weight:300;color:rgba(0,0,0,.2);}
+.footer-note{font-family:var(--fm);font-size:8.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--lg);}
+.logo-wrap img.prime-logo{height:48px;}
+@media(max-width:860px){
+  .cover{min-height:60vh;padding:48px 24px;}
+  .logo-wrap img{height:32px;}.logo-x{font-size:22px;}
+  .logo-wrap img.prime-logo{height:38px;}
+  .blocks{padding:32px 20px 0;}
+  .block{grid-template-columns:1fr;}
+  .block-left{border-right:none;border-bottom:1px solid var(--border);padding:28px 24px;}
+  .block-right{padding:28px 24px;}
+  .block-num{font-size:36px;}
+}
+@media(max-width:480px){
+  .logo-lockup{gap:18px;}.logo-wrap img{height:26px;}
+  .logo-wrap img.prime-logo{height:31px;}
+  .blocks{padding:24px 16px 0;}.footer{padding:24px 18px 36px;}
+  .block-formats{flex-direction:column;}
+}
+</style>
+</head>
+<body>
+<nav style="position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);height:56px;display:flex;align-items:center;"><div style="max-width:1100px;margin:0 auto;padding:0 32px;display:flex;align-items:center;width:100%;"><a href="#" style="display:flex;align-items:center;text-decoration:none;"><img src="hoichoi.png" alt="hoichoi" style="height:22px;width:auto;display:block;"></a></div></nav>
+<div class="cover"><div class="cover-inner">
+  <div class="logo-lockup"><div class="logo-wrap"><img src="hoichoi.png" alt="hoichoi"></div><div class="logo-x">×</div><div class="logo-wrap"><img src="prime-video.png" alt="Prime Video" class="prime-logo"></div></div>
+  <div class="cover-rule"></div>
+  <div class="cover-label">Strategic Partnership</div>
+  <div class="cover-title">Rooted Stories.<br>Global Reach.</div>
+  <div class="cover-sub">A curated proposal for IP Remakes & Production: hoichoi's top-performing Bengali IPs, adapted for Hindi and Telugu audiences and national franchise potential.</div>
+  <div class="scroll-cue"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 8L10 13L15 8" stroke="#999" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Scroll to explore</div>
+</div></div>
+<div class="blocks">
+  <div class="block">
+    <div class="block-left"><div><div class="block-cat">Format Rights</div><div class="block-title">IP Remakes &amp; Production</div><div class="block-tags"><span class="block-tag">Hindi Fit</span><span class="block-tag">Telugu Fit</span><span class="block-tag">Franchise Potential</span></div></div>
+    <a href="adaptations.html" class="block-cta desktop-newtab" data-href="adaptations.html">Explore IPs <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+    <div class="block-right"><div class="block-headline">8 curated IPs, each selected on the basis of character, strong world-building, franchise potential, and cross-market adaptability.</div>
+    <div class="block-points"><div class="block-point"><div class="bp-dot"></div><div class="bp-text">Curated from top-performing titles on hoichoi globally, iconic IPs with strong appeal for Hindi and Telugu audiences and proven franchise mechanics.</div></div><div class="block-point"><div class="bp-dot"></div><div class="bp-text">For each IP: format, core character, the world of the show, what makes it special, how it builds across seasons, and early adaptation thinking.</div></div><div class="block-point"><div class="bp-dot"></div><div class="bp-text">Titles span horror, crime, legal drama, investigative thriller, and survival, covering the full spectrum of what travels nationally.</div></div></div></div>
+  </div>
+</div>
+<div class="footer"><div class="footer-logos"><img src="hoichoi.png" alt="hoichoi" class="footer-logo"><span class="footer-x">×</span><img src="prime-video.png" alt="Prime Video" class="footer-logo prime-logo"></div><span class="footer-note">Confidential · For Discussion Purposes Only</span></div>
+<script>
+// Desktop: open blocks in new tab. Mobile: same tab.
+document.querySelectorAll('.desktop-newtab').forEach(function(el){
+  el.addEventListener('click',function(e){
+    if(window.innerWidth>860){
+      e.preventDefault();
+      window.open(el.getAttribute('data-href'),'_blank');
+    }
+  });
+});
+</script>
+</body>
+</html>
