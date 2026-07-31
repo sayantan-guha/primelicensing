@@ -1,6 +1,6 @@
 {
-  "outputDirectory": "output",
   "framework": null,
+  "outputDirectory": "output",
   "rewrites": [
     { "source": "/", "destination": "/index.html" }
   ]

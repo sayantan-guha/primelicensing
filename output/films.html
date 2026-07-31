@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>hoichoi — Bengali Films — hoichoi</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600;700&family=PT+Mono:wght@400&family=Hind+Siliguri:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--red:#d20820;--velvet:#6d0550;--grad:linear-gradient(-60deg,#d20820 0%,#6d0550 100%);--soot:#191919;--dg:#2a2a2a;--mg:#555;--lg:#888;--off:#f5f5f5;--white:#fff;--border:rgba(0,0,0,.08);--shadow:0 2px 16px rgba(0,0,0,.07);--fp:'Outfit',sans-serif;--fb:'Manrope',sans-serif;--fm:'PT Mono',monospace;--fh:'Hind Siliguri',sans-serif;--r-xs:6px;--r-md:16px;--r-full:9999px;}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:var(--fb);color:var(--soot);-webkit-font-smoothing:antialiased;}
+.nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(245,245,245,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);height:50px;display:flex;align-items:center;}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;align-items:center;gap:12px;width:100%;}
+.nav-brand{display:flex;align-items:center;flex-shrink:0;text-decoration:none;}
+.nav-logo{height:20px;width:auto;display:block;}
+.nav-list-wrap{position:relative;flex:1;min-width:0;}
+.nav-list{display:flex;align-items:center;gap:3px;overflow-x:auto;scrollbar-width:none;width:100%;}
+.nav-list::-webkit-scrollbar{display:none;}
+.nav-list-wrap::after{content:'›';position:absolute;top:0;right:0;bottom:0;width:44px;background:linear-gradient(to right,transparent,rgba(245,245,245,.97) 60%);display:flex;align-items:center;justify-content:flex-end;padding-right:6px;font-size:16px;color:var(--mg);pointer-events:none;transition:opacity .3s;}
+.nav-list-wrap.at-end::after{opacity:0;}
+.nav-link{font-family:var(--fm);font-size:8.5px;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:var(--r-full);white-space:nowrap;color:var(--dg);border:1px solid transparent;background:none;cursor:pointer;font-weight:500;transition:all .18s;}
+.nav-link:hover{color:var(--soot);border-color:var(--border);background:var(--white);}
+.nav-link.active{background:var(--grad);color:#fff;font-weight:600;border-color:transparent;}body{background:var(--off);}
+.page{max-width:1100px;margin:0 auto;padding:72px 24px 64px;}
+.lhead{text-align:center;margin-bottom:44px;}
+.leyebrow{font-family:var(--fm);font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--red);font-weight:600;margin-bottom:10px;}
+.ltitle{font-family:var(--fp);font-size:clamp(30px,5vw,48px);font-weight:800;color:var(--soot);letter-spacing:-.03em;margin-bottom:8px;}
+.lsub{font-size:14px;color:var(--mg);}
+.lgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.land-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r-md);overflow:hidden;box-shadow:var(--shadow);text-decoration:none;display:flex;flex-direction:column;position:relative;transition:transform .22s,box-shadow .22s;}
+.land-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2.5px;background:var(--grad);z-index:1;}
+.land-card:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,0,0,.13);}
+.land-img{width:100%;aspect-ratio:4/3;overflow:hidden;background:#111;position:relative;}
+.land-img img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block;transition:transform .3s;}
+.land-card:hover .land-img img{transform:scale(1.04);}
+.land-ph{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-family:var(--fp);font-size:52px;font-weight:800;color:rgba(255,255,255,.08);}
+.land-flag{position:absolute;top:12px;left:12px;background:var(--grad);color:#fff;font-family:var(--fm);font-size:8px;letter-spacing:.12em;text-transform:uppercase;padding:4px 10px;border-radius:var(--r-full);font-weight:600;z-index:2;}
+.land-info{padding:18px 20px 20px;}
+.land-tag{font-family:var(--fm);font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:var(--red);font-weight:600;margin-bottom:6px;}
+.land-title{font-family:var(--fp);font-size:clamp(17px,2vw,22px);font-weight:800;color:var(--soot);letter-spacing:-.02em;line-height:1.1;margin-bottom:4px;}
+.land-dur{font-family:var(--fm);font-size:8px;letter-spacing:.1em;text-transform:uppercase;color:var(--mg);margin-bottom:12px;}
+.land-arrow{display:inline-flex;align-items:center;gap:6px;font-family:var(--fp);font-size:11px;font-weight:700;color:var(--red);}
+.land-arrow svg{transition:transform .18s;}
+.land-card:hover .land-arrow svg{transform:translateX(3px);}
+@media(max-width:768px){.lgrid{grid-template-columns:1fr;gap:14px;}.page{padding:60px 16px 48px;}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="nav-inner"><a href="index.html" class="nav-brand"><img src="hoichoi.png" alt="hoichoi" class="nav-logo"></a></div></nav>
+<div class="page"><div class="lhead"><div class="leyebrow">hoichoi Originals</div><div class="ltitle">Bengali Films</div><div class="lsub">Bengali cinema for a global audience — available for acquisition and language rights.</div></div><div class="lgrid"><a href="films-detail.html#ac0" class="land-card"><div class="land-img"><span class="land-flag">Franchise · 4 Films</span><img src="https://res.cloudinary.com/dl3cy6hzv/image/upload/v1778507219/the-eken-kerala_x7amh1.jpg" alt="Eken Babu"></div><div class="land-info"><div class="land-tag">Detective Mystery</div><div class="land-title">Eken Babu</div><div class="land-dur">120-140 mins</div><div class="land-arrow">View Details <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div></a><a href="films-detail.html#ac1" class="land-card"><div class="land-img"><img src="https://res.cloudinary.com/dl3cy6hzv/image/upload/v1778507218/ERTA_buvs7r.jpg" alt="Ei Raat Tomar Amaar"></div><div class="land-info"><div class="land-tag">Relationship Drama</div><div class="land-title">Ei Raat Tomar Amaar</div><div class="land-dur">102 mins</div><div class="land-arrow">View Details <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div></a><a href="films-detail.html#ac2" class="land-card"><div class="land-img"><span class="land-flag">Releasing June 2026</span><img src="https://res.cloudinary.com/dl3cy6hzv/image/upload/v1778592504/Bhugun_dyt1jm.jpg" alt="Bhugun"></div><div class="land-info"><div class="land-tag">Supernatural Horror</div><div class="land-title">Bhugun</div><div class="land-dur">120-140 mins</div><div class="land-arrow">View Details <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L8 3M12 7L8 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div></a></div></div>
+</body>
+</html>
